@@ -129,7 +129,7 @@ navigation/
 
 ### 运动学
 
-运动学主要实现在 [`core/world.py`](../navigation/core/world.py) 的 `World` 类中，每一帧 `world.update(cmd_vx, cmd_vy, dt)` 会先更新动态障碍物，再更新机器人。
+运动学主要实现在 [`core/world.py`](../navigation/core/world.py) 的 `MapWorld` 类中，每一帧 `world.update(cmd_vx, cmd_vy, dt)` 会先更新动态障碍物，再更新机器人。
 
 > 需要注意的是，机器人会和所有障碍物发生碰撞，但是动态障碍物只和静态地图碰撞，和机器人不会发生碰撞
 
